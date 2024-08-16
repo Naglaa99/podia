@@ -1,24 +1,28 @@
+@font-face {
+  font-family: inter-logo;
+  src: url("/assets/fonts/Inter_28pt-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: inter;
+  src: url("/assets/fonts/Inter_24pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: Tiempos;
+  src: url("/assets/fonts/TestTiemposHeadline-Medium-BF66457a509b4ec.otf");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: inter-logo;
-  src: url("/assets/fonts/Inter_28pt-ExtraBold.ttf");
-}
-@font-face {
-  font-family: inter;
-  src: url("/assets/fonts/Inter_24pt-Regular.ttf");
-}
-@font-face {
-  font-family: Tiempos;
-  src: url("/assets/fonts/TestTiemposHeadline-Medium-BF66457a509b4ec.otf");
-}
 body {
   background-color: #fdfbf9;
 }
+
 /* =========header========= */
 #header {
   width: 100%;
@@ -26,29 +30,32 @@ body {
   position: sticky;
   top: 0;
   transition: background-color 0.3s ease;
-  z-index: 1000;
+  z-index: 1;
 }
+
 .sticky {
   background-color: white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
+
 nav ul li {
   list-style-type: none;
   margin: 0 10px;
 }
+
 nav ul li a {
   text-decoration: none;
   font-family: inter;
@@ -56,22 +63,26 @@ nav ul li a {
   font-size: 18px;
   padding: 10px;
 }
+
 nav ul li:not(:first-child) a:hover {
   border: 3px solid #b8a9e2;
   border-radius: 9999px;
   background-color: #f5efeb;
 }
+
 .logo {
   color: #4b2aad;
   font-family: inter-logo;
   font-size: 30px;
   letter-spacing: -1px;
 }
+
 .logo:hover {
   color: #201445;
   transition: 0.7s;
   cursor: pointer;
 }
+
 nav .contact {
   display: flex;
   align-items: center;
@@ -85,12 +96,14 @@ nav .contact a {
   font-size: 18px;
   padding: 15px;
 }
+
 .contact a:hover {
   border-radius: 9999px;
 
   background-color: #f5efeb;
   transition: 0.6s;
 }
+
 .contact button {
   margin-right: 30px;
   width: 150px;
@@ -103,6 +116,7 @@ nav .contact a {
   background-color: #4b2aad;
   color: #ffffff;
 }
+
 .contact button:hover {
   background-color: #201445;
   transition: 0.7s;
@@ -123,6 +137,7 @@ nav .contact a {
   top: 44px;
   display: none;
 }
+
 .dropdown-content p {
   padding: 8px 14px;
   color: rgb(183, 151, 113);
@@ -132,10 +147,12 @@ nav .contact a {
   font-size: 12px;
   font-weight: 700;
 }
+
 .dropdown-content hr {
   border: 1px dashed #d1cbcb;
   margin: 15px;
 }
+
 .dropdown-content a {
   color: #727172;
   padding: 8px 14px;
@@ -145,29 +162,36 @@ nav .contact a {
   font-size: 16px;
   font-weight: 500;
 }
+
 .dropdown-content a:hover {
   color: #4b2aad;
 }
+
 .dropdown:hover .dropdown-content {
   display: flex;
 }
+
 /*============section1==========*/
 main {
   margin: 130px;
 }
-.section1 {
+
+.hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.image {
+
+.hero_image {
   width: 600px;
   margin-left: 50px;
 }
-.image img {
+
+.hero_image img {
   width: 100%;
   border-radius: 10px;
 }
-.text1 span {
+
+.hero_description span {
   color: #9c8881;
   font-family: inter;
   text-transform: uppercase;
@@ -175,20 +199,23 @@ main {
   font-size: 12px;
   font-weight: 600;
 }
-.text1 h2 {
+
+.hero_description h2 {
   color: #1a1715;
   margin-top: 15px;
   font-family: Tiempos;
   font-size: 50px;
   font-weight: 500;
 }
-.text1 P {
+
+.hero_description P {
   margin: 10px 0;
   color: #5c5856;
   font-size: 24px;
   line-height: 1.6;
 }
-.text1 button {
+
+.hero_description button {
   border: none;
   color: #ffffff;
   background-color: #4b2aad;
@@ -198,43 +225,51 @@ main {
   font-family: inter;
   font-weight: 600;
 }
-.text1 button:hover {
+
+.hero_description button:hover {
   background-color: #201445;
   transition: 0.3s;
 }
+
 /* ==========section2========= */
-section.section2 {
+section.podia_detailes {
   margin: 100px 0;
   text-align: center;
 }
-.text2 {
+
+.about_podia {
   padding: 0 130px;
 }
-.text2 h2 {
+
+.about_podia h2 {
   color: #1a1715;
   font-family: Tiempos;
   font-size: 35px;
   line-height: 1.6;
   font-weight: 500;
 }
-.text2 p {
+
+.about_podia p {
   margin-top: 10px;
   color: #5c5856;
   font-family: inter;
   font-size: 20px;
   line-height: 1.6;
 }
+
 /* ========section3============= */
-.section3 {
+.podia_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.box {
+
+.card {
   align-items: center;
   text-align: center;
   padding: 0 12px;
 }
-.box h3 {
+
+.card h3 {
   margin-top: 10px;
   color: #1a1715;
   font-family: Tiempos;
@@ -242,7 +277,8 @@ section.section2 {
   line-height: 1.6;
   font-weight: 400;
 }
-.box p {
+
+.card p {
   margin-top: 10px;
   color: #5c5856;
   font-family: inter;
@@ -251,20 +287,23 @@ section.section2 {
 }
 
 /* ==========section4========= */
-.section4 {
+.products {
   margin-top: 100px;
   padding: 0 10px;
   text-align: center;
 }
+
 /* =========section_sell====== */
 .sell {
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .text_sell {
   padding-top: 80px;
 }
+
 .text_sell span {
   color: #9c8881;
   font-family: inter;
@@ -273,6 +312,7 @@ section.section2 {
   font-size: 12px;
   font-weight: 600;
 }
+
 .text_sell h2 {
   margin-top: 10px;
   font-size: 30px;
@@ -283,45 +323,49 @@ section.section2 {
 
 .text_sell p {
   margin-top: 10px;
+  margin-bottom: 20px;
   color: #5c5856;
   font-family: inter;
   font-size: 19px;
   line-height: 1.6;
 }
-div .link {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.link a {
+
+.text_sell a {
   font-family: inter;
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   color: #4b2aad;
+  display: flex;
+  align-items: center;
 }
-.link i {
+
+.text_sell i {
   padding-top: 5px;
   font-size: 25px;
   color: #4b2aad;
 }
-.link:hover i {
+
+.text_sell a:hover i {
   padding-left: 6px;
   transition: 0.7s;
 }
+
 /* =========section_review========= */
 section.review {
   text-align: center;
   margin-top: 130px;
 }
+
 .img_review {
   width: 200px;
   margin: 0 auto;
 }
+
 .img_review img {
   width: 100%;
 }
+
 .review h4 {
   padding: 0 80px;
   margin-top: 10px;
@@ -331,12 +375,14 @@ section.review {
   line-height: 1.6;
   font-weight: 100;
 }
+
 .review p {
   margin-top: 10px;
   color: #5c5856;
   font-family: inter;
   font-size: 19px;
 }
+
 /* ==========section_account======== */
 section.account {
   margin-top: 130px;
@@ -348,18 +394,21 @@ section.account {
   padding: 60px;
   text-align: center;
 }
+
 .account h4 {
   color: #ffffff;
   font-family: Tiempos;
   font-size: 35px;
   font-weight: 500;
 }
+
 .account p {
   padding-top: 15px;
   color: #d7d2e8;
   font-size: 18px;
   font-family: inter;
 }
+
 .account button {
   color: #ffffff;
   margin-top: 30px;
@@ -371,6 +420,7 @@ section.account {
   border: none;
   border-radius: 9999px;
 }
+
 .account button:hover {
   background-color: #4b2aad;
   transition: 0.6s;
@@ -383,9 +433,11 @@ footer {
   width: 100%;
   padding: 130px;
 }
+
 .category {
   padding-bottom: 25px;
 }
+
 .category span {
   font-size: 18px;
   font-family: inter;
@@ -393,6 +445,7 @@ footer {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 footer a {
   color: #5c5856;
   font-family: inter;
@@ -406,6 +459,7 @@ footer a:hover {
   cursor: pointer;
   transition: 0.4s;
 }
+
 .category a {
   padding: 0 10px;
   font-size: 18px;
@@ -416,15 +470,18 @@ footer a:hover {
 .copy_right {
   margin-top: 20px;
 }
+
 .copy_right span {
   font-size: 16px;
   font-family: inter;
   color: #5c5856;
 }
+
 .copy_right a {
   padding-left: 10px;
   font-size: 16px;
 }
+
 .round-button {
   position: fixed;
   right: 20px;
