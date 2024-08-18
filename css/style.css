@@ -29,7 +29,7 @@ body {
 
 #header {
   width: 100%;
-  padding: 20px 100px;
+  padding: 15px 0;
   position: sticky;
   top: 0;
   transition: background-color 0.3s ease;
@@ -42,9 +42,12 @@ body {
 }
 
 nav {
+  max-width: 1350px;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 nav ul {
@@ -52,29 +55,30 @@ nav ul {
   align-items: center;
   margin-left: 20px;
   flex-grow: 1;
+  gap: 0.5rem;
+  padding-block: 15px;
 }
 
 nav ul li {
   list-style-type: none;
-  margin: 0 10px;
 }
 
-nav ul li a {
+nav ul li > a {
   text-decoration: none;
   font-family: inter;
   color: #201445;
   font-size: 18px;
   padding: 10px;
+  border: 3px solid transparent;
 }
 
-nav ul li a:hover {
-  border: 3px solid #b8a9e2;
-  border-radius: 9999px;
+nav ul li > a:hover {
+  border-color: #b8a9e2;
+  border-radius: 3rem;
   background-color: #f5efeb;
 }
 
 .logo {
-  padding-left: 30px;
   text-decoration: none;
   color: #4b2aad;
   font-family: inter-logo;
@@ -88,14 +92,15 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-nav .contact {
+.contact {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 nav .contact a {
   text-decoration: none;
-  margin-right: 15px;
   font-family: inter;
   color: #201445;
   font-size: 18px;
@@ -110,7 +115,6 @@ nav .contact a {
 
 .contact button,
 .signup {
-  margin-right: 30px;
   width: 150px;
   border-radius: 9999px;
   padding: 14px;
@@ -131,15 +135,15 @@ nav .contact a {
 .dropdown-content {
   position: absolute;
   padding: 15px;
-  width: 450px;
-  height: 250px;
+  width: fit-content;
+  height: max-content;
   border-radius: 8px;
   background-color: white;
   border: 1px solid #f5efeb;
   box-shadow: 2px 2px 4px rgba(133, 131, 131, 0.4);
   display: flex;
   justify-content: space-between;
-  top: 75%;
+  top: 100%;
   display: none;
 }
 
@@ -171,8 +175,6 @@ nav .contact a {
 
 .dropdown-content a:hover {
   color: #4b2aad;
-  background-color: transparent;
-  border: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -223,7 +225,7 @@ nav .contact a {
 /* Responsive styles */
 @media (max-width: 1180px) {
   #header {
-    padding: 20px 30px;
+    padding: 20px;
   }
 
   .contact button {
@@ -316,21 +318,32 @@ nav .contact a {
 
 /*============section1==========*/
 main {
-  margin: 130px;
+  padding-block: 3rem;
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  max-width: 1350px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.hero_image,
+.hero_description {
+  flex: 1;
 }
 
 .hero_image {
-  width: 600px;
-  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .hero_image img {
-  width: 100%;
+  width: 95%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -351,11 +364,12 @@ main {
   font-weight: 500;
 }
 
-.hero_description P {
-  margin: 10px 0;
+.hero_description p {
+  margin: 15px 0;
   color: #5c5856;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
+  font-family: inter;
 }
 
 .hero_description button {
@@ -367,6 +381,7 @@ main {
   font-size: 20px;
   font-family: inter;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .hero_description button:hover {
@@ -465,12 +480,15 @@ main {
 
 /* ==========section2========= */
 section.podia_detailes {
-  margin: 100px 0;
+  max-width: 1350px;
+  margin-inline: auto;
   text-align: center;
+  margin-block: 8rem;
 }
 
 .about_podia {
-  padding: 0 130px;
+  width: 75%;
+  margin-inline: auto;
 }
 
 .about_podia h2 {
@@ -537,8 +555,11 @@ section.podia_detailes {
 
 /* ========section3============= */
 .podia_cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 1350px;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .card {
@@ -591,25 +612,38 @@ section.podia_detailes {
 
 /* ==========section4========= */
 .products {
+  max-width: 1350px;
+  margin-inline: auto;
   margin-top: 80px;
   padding: 0 10px;
   text-align: center;
+  width: 85%;
 }
 
 /* =========section_sell====== */
 .sell {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin-inline: auto;
+}
+
+.sell_image,
+.text_sell {
+  flex: 1;
 }
 
 .sell_image {
-  width: 600px;
-  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .sell_image img {
-  width: 100%;
+  width: 90%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -792,11 +826,13 @@ section.review {
 /* ==========section_account======== */
 section.account {
   margin-top: 130px;
+  max-width: 1350px;
+  margin-inline: auto;
   width: 100%;
   height: 280px;
   background-color: #201445;
   border-radius: 10px;
-  box-shadow: 2px 2px 3px rgba(75, 74, 74, 0.6);
+  /* box-shadow: 2px 2px 3px rgba(75, 74, 74, 0.6); */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -995,4 +1031,30 @@ footer a:hover {
     height: 50px;
     font-size: 25px;
   }
+}
+
+/* ---------- Responsive Design ---------- */
+
+/* Styles for medium mobile devices */
+@media (max-width: 375px) {
+}
+
+/* Styles for small tablets */
+@media (max-width: 600px) {
+}
+
+/* Styles for large tablets */
+@media (max-width: 768px) {
+}
+
+/* Styles for small laptops */
+@media (max-width: 1024px) {
+}
+
+/* Styles for large laptops and desktops */
+@media (max-width: 1440px) {
+}
+
+/* Styles for extra-large desktops */
+@media (min-width: 1440px) {
 }
