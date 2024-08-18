@@ -139,7 +139,7 @@ nav .contact a {
   box-shadow: 2px 2px 4px rgba(133, 131, 131, 0.4);
   display: flex;
   justify-content: space-between;
-  top: 35px;
+  top: 75%;
   display: none;
 }
 
