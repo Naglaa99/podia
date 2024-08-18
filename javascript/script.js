@@ -9,16 +9,15 @@ function stickyHeader() {
     header.classList.remove("sticky");
   }
 }
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-menu a");
 
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const closeMenu = document.getElementById("closeMenu");
+
+menuToggle.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-  });
+closeMenu.addEventListener("click", function () {
+  navLinks.classList.remove("active");
 });
