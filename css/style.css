@@ -74,7 +74,6 @@ nav ul li a:hover {
 }
 
 .logo {
-  padding-left: 30px;
   text-decoration: none;
   color: #4b2aad;
   font-family: inter-logo;
@@ -220,7 +219,6 @@ nav .contact a {
   display: none;
 }
 
-/* Responsive styles */
 @media (max-width: 1180px) {
   #header {
     padding: 20px 30px;
