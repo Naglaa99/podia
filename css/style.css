@@ -200,7 +200,7 @@ nav .contact a {
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   color: #9c8881;
   font-weight: 700;
@@ -208,7 +208,7 @@ nav .contact a {
 
 .list-top p {
   font-family: inter;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -222,102 +222,9 @@ nav .contact a {
   display: none;
 }
 
-@media (max-width: 1180px) {
-  #header {
-    padding: 20px;
-  }
-
-  .contact button {
-    display: none;
-  }
-
-  .signup {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav .contact a {
-    margin-right: 0px;
-  }
-
-  .logo {
-    padding-left: 0px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    border-radius: 10px;
-    border: 1px solid #d6d4d6;
-    margin: 0 10px;
-    padding: 20px;
-  }
-
-  nav ul li {
-    margin: 8px 0px;
-    align-items: center;
-    width: 100%;
-  }
-
-  nav ul li a {
-    color: black;
-    font-size: 20px;
-    font-family: "Tiempos";
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .dropdown-content {
-    position: relative;
-    width: 100%;
-    height: auto;
-    top: 100%;
-    box-shadow: none;
-    flex-direction: column;
-    border: none;
-    border-radius: 0;
-  }
-
-  .dropdown-content hr {
-    width: 100%;
-  }
-
-  nav ul li a:hover {
-    border: none;
-    background-color: transparent;
-  }
-
-  .dropdown-content p {
-    padding: 10px;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .list-top {
-    display: flex;
-    margin-bottom: 10px;
-  }
-}
-
 /*============section1==========*/
 main {
-  padding-block: 3rem;
+  padding-block: 6rem;
 }
 
 .hero {
@@ -364,9 +271,9 @@ main {
 }
 
 .hero_description p {
-  margin: 15px 0;
+  margin-block: 15px;
   color: #5c5856;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 1.6;
   font-family: inter;
 }
@@ -386,95 +293,6 @@ main {
 .hero_description button:hover {
   background-color: #201445;
   transition: 0.3s;
-}
-
-@media (min-width: 1080px) and (max-width: 1440px) {
-  main {
-    margin: 100px;
-  }
-
-  #header {
-    padding: 20px 100px;
-  }
-
-  .hero_image {
-    width: 100%;
-    margin-left: 40px;
-  }
-
-  .hero_description h2 {
-    font-size: 30px;
-  }
-
-  .hero_description P {
-    font-size: 18px;
-  }
-
-  .hero_description button {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1079px) {
-  main {
-    margin: 70px;
-  }
-
-  .hero_image {
-    width: 100%;
-    margin-left: 25px;
-  }
-
-  .hero_description h2 {
-    font-size: 18px;
-  }
-
-  .hero_description P {
-    font-size: 16px;
-  }
-
-  .hero_description button {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 768px) {
-  main {
-    margin: 30px;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero_image {
-    width: 100%;
-    margin-left: 0px;
-    margin-bottom: 50px;
-    order: 1;
-  }
-
-  .hero_description {
-    order: 2;
-  }
-
-  .hero_description h2 {
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  .hero_description P {
-    font-size: 18px;
-  }
-
-  .hero_description button {
-    padding: 10px 20px;
-    font-size: 18px;
-  }
 }
 
 /* ==========section2========= */
@@ -504,52 +322,6 @@ section.podia_detailes {
   font-family: inter;
   font-size: 20px;
   line-height: 1.6;
-}
-
-@media (min-width: 1080px) and (max-width: 1440px) {
-  .about_podia {
-    padding: 0 50px;
-  }
-
-  .about_podia p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1079px) {
-  section.podia_detailes {
-    margin: 80px 0;
-  }
-
-  .about_podia {
-    padding: 0;
-  }
-
-  .about_podia h2 {
-    font-size: 30px;
-  }
-
-  .about_podia p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 768px) {
-  section.podia_detailes {
-    margin: 50px 0;
-  }
-
-  .about_podia {
-    padding: 0;
-  }
-
-  .about_podia h2 {
-    font-size: 25px;
-  }
-
-  .about_podia p {
-    font-size: 16px;
-  }
 }
 
 /* ========section3============= */
@@ -582,31 +354,6 @@ section.podia_detailes {
   font-family: inter;
   font-size: 16px;
   line-height: 1.6;
-}
-
-@media (min-width: 769px) and (max-width: 1440px) {
-  .card {
-    padding: 0 10px;
-  }
-
-  .card h3 {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 768px) {
-  .podia_cards {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card {
-    padding: 30px 0;
-  }
-
-  .card h3 {
-    font-size: 18px;
-    font-weight: 300;
-  }
 }
 
 /* ==========section4========= */
@@ -697,70 +444,10 @@ section.podia_detailes {
   transition: 0.7s;
 }
 
-@media (min-width: 1080px) and (max-width: 1440px) {
-  .sell_image {
-    width: 100%;
-    margin-left: 40px;
-  }
-
-  .text_sell {
-    padding-top: 20px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1079px) {
-  .sell_image {
-    width: 100%;
-    margin-left: 25px;
-  }
-
-  .text_sell {
-    padding-top: 0px;
-  }
-
-  .text_sell h2 {
-    margin-top: 8px;
-    font-size: 18px;
-  }
-
-  .text_sell p {
-    margin-bottom: 0px;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 768px) {
-  .sell {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .sell_image {
-    width: 100%;
-    margin-left: 0px;
-    margin-bottom: 50px;
-    order: 1;
-  }
-
-  .text_sell {
-    order: 2;
-    padding-top: 30px;
-  }
-
-  .text_sell h2 {
-    font-size: 20px;
-  }
-
-  .text_sell p {
-    font-size: 16px;
-  }
-}
-
 /* =========section_review========= */
 section.review {
+  max-width: 1350px;
+  margin-inline: auto;
   text-align: center;
   margin-top: 130px;
 }
@@ -791,37 +478,6 @@ section.review {
   font-size: 19px;
 }
 
-@media (min-width: 1080px) and (max-width: 1440px) {
-  section.review {
-    margin-top: 80px;
-  }
-
-  .review h4 {
-    font-size: 20px;
-    padding: 0;
-  }
-}
-
-@media (min-width: 370px) and (max-width: 767px) {
-  section.review {
-    margin-top: 50px;
-  }
-
-  .review h4 {
-    font-size: 18px;
-    padding: 0;
-  }
-
-  .img_review {
-    width: 150px;
-  }
-
-  .review p {
-    font-size: 15px;
-    font-weight: 400;
-  }
-}
-
 /* ==========section_account======== */
 section.account {
   margin-top: 130px;
@@ -831,7 +487,6 @@ section.account {
   height: 280px;
   background-color: #201445;
   border-radius: 10px;
-  /* box-shadow: 2px 2px 3px rgba(75, 74, 74, 0.6); */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -871,35 +526,12 @@ section.account {
   transition: 0.6s;
 }
 
-@media (min-width: 370px) and (max-width: 1180px) {
-  section.account {
-    margin-top: 100px;
-    padding: 20px;
-  }
-
-  .account h4 {
-    font-size: 22px;
-    font-weight: 500;
-  }
-
-  .account p {
-    padding-top: 12px;
-    font-size: 16px;
-  }
-
-  .account button {
-    margin-top: 20px;
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-}
-
 /* footer */
 footer {
   margin-top: 60px;
   background-color: #f5efeb;
   width: 100%;
-  padding: 130px;
+  padding: 7rem 5rem;
 }
 
 .category {
@@ -970,25 +602,181 @@ footer a:hover {
   align-items: center;
 }
 
-@media (min-width: 769px) and (max-width: 1100px) {
-  footer {
-    padding: 60px;
+/* ---------- Responsive Design ---------- */
+/* Styles for large laptops and desktops */
+@media (max-width: 1440px) {
+  nav,
+  .hero,
+  .podia-detailes,
+  .podia_cards,
+  .review,
+  .sell {
+    margin-inline: 5rem;
   }
 
-  .category a {
-    padding: 0 6px;
-    font-size: 16px;
+  .hero {
+    gap: 4rem;
   }
 
-  category span {
-    font-size: 16px;
+  .hero_description h2 {
+    font-size: calc(32px + 18 * ((100vw - 421px) / 859));
+  }
+
+  .hero_description p {
+    margin-block: 15px;
+  }
+
+  .products {
+    width: 90%;
+  }
+
+  .review h4 {
+    padding-inline: 12.8rem;
+    font-size: 20px;
+  }
+
+  section.account {
+    margin-top: 100px;
+    max-width: 89%;
   }
 }
 
-@media (max-width: 768px) {
+/* Styles for small laptops */
+@media (max-width: 1024px) {
+  nav,
+  .hero,
+  .podia-detailes,
+  .podia_cards,
+  .review,
+  .sell {
+    margin-inline: 2.5rem;
+  }
+
   footer {
-    margin-top: 30px;
-    padding: 60px 30px;
+    padding-inline: 2.5rem;
+  }
+
+  section.account {
+    margin-top: 100px;
+    max-width: 92%;
+    margin-inline: auto;
+  }
+
+  #header {
+    padding: 10px 0;
+  }
+
+  .contact button {
+    display: none;
+  }
+
+  .signup {
+    display: block;
+    width: 100%;
+    margin-block: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    top: 0px;
+    left: 0;
+    border-radius: 8px;
+    border: 1px solid #d6d4d6;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0px;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-family: "Tiempos";
+    padding-block: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    box-shadow: none;
+    flex-direction: column;
+    border: none;
+    border-radius: 0;
+  }
+
+  .dropdown-content hr {
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    background-color: transparent;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .list-top {
+    display: flex;
+  }
+
+  .hero {
+    gap: 4rem;
+  }
+
+  .hero_description h2 {
+    font-size: calc(32px + 18 * ((100vw - 421px) / 859));
+  }
+
+  .hero_description p {
+    font-size: 20px;
+    margin-block: 15px;
+  }
+
+  .about_podia {
+    width: 90%;
+  }
+
+  .about_podia h2 {
+    font-size: 30px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .products {
+    width: 100%;
+  }
+
+  .review h4 {
+    padding-inline: 3rem;
+    font-size: 20px;
+  }
+
+  section.account {
+    margin-top: 100px;
+    max-width: 92%;
   }
 
   .category {
@@ -998,16 +786,20 @@ footer a:hover {
 
   .category span {
     font-family: "Tiempos";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  .category span:hover {
+    color: #4b2aad;
+  }
+
   .category a {
     display: none;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 0;
   }
 
@@ -1024,6 +816,156 @@ footer a:hover {
   .category:hover a {
     display: block;
   }
+}
+
+/* Styles for large tablets */
+@media (max-width: 768px) {
+  nav,
+  .hero,
+  .podia-detailes,
+  .podia_cards,
+  .review,
+  .sell {
+    margin-inline: 1.2rem;
+  }
+
+  footer {
+    padding-inline: 1.2rem;
+  }
+
+  main {
+    padding-block: 4rem;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .hero_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    order: 1;
+  }
+
+  .hero_description {
+    order: 2;
+  }
+
+  .hero_image img {
+    width: 100%;
+  }
+
+  .hero_description h2 {
+    font-size: 40px;
+  }
+
+  section.podia_detailes {
+    margin-block: 4rem;
+  }
+
+  .about_podia {
+    width: 94%;
+  }
+
+  .about_podia h2 {
+    font-size: 28px;
+  }
+
+  .podia_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card {
+    padding-block: 2.5rem;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .card p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  section.products {
+    margin-block: 75px;
+  }
+
+  .sell {
+    margin-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sell_image {
+    order: 1;
+  }
+
+  .sell_image img {
+    width: 100%;
+  }
+
+  .text_sell {
+    order: 2;
+    padding-top: 50px;
+  }
+
+  .text_sell h2 {
+    font-size: 25px;
+  }
+
+  .text_sell p {
+    font-size: 18px;
+  }
+
+  section.review {
+    margin-block: 5rem;
+  }
+
+  .review h4 {
+    padding-inline: 2rem;
+    font-size: 20px;
+  }
+
+  section.account {
+    margin-top: 80px;
+    max-width: 95%;
+  }
+
+  .account h4 {
+    font-size: 28px;
+  }
+
+  .account p {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .account button {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .category span {
+    font-size: 18px;
+  }
+
+  .category a {
+    font-size: 16px;
+  }
 
   .round-button {
     width: 50px;
@@ -1032,28 +974,129 @@ footer a:hover {
   }
 }
 
-/* ---------- Responsive Design ---------- */
+/* Styles for small tablets */
+@media (max-width: 600px) {
+  .contact {
+    gap: 0.5rem;
+  }
+
+  nav .contact a {
+    font-size: 16px;
+  }
+
+  .menu-toggle {
+    font-size: 16px;
+  }
+
+  .hero_description h2 {
+    font-size: 35px;
+  }
+
+  .hero_description p {
+    font-size: 19px;
+  }
+
+  .hero_description button {
+    font-size: 18px;
+  }
+
+  section.podia_detailes {
+    margin-block: 3.5rem;
+  }
+
+  .about_podia {
+    width: 94%;
+  }
+
+  .about_podia h2 {
+    font-size: 26px;
+  }
+
+  section.products {
+    margin-block: 60px;
+  }
+
+  .products h2 {
+    font-size: 25px;
+  }
+
+  .products p {
+    font-size: 18px;
+  }
+
+  .text_sell h2 {
+    font-size: 22px;
+  }
+
+  .text_sell p {
+    font-size: 17px;
+  }
+
+  .text_sell a {
+    font-size: 16px;
+  }
+
+  .text_sell i {
+    font-size: 22px;
+  }
+
+  .review h4 {
+    font-size: 18px;
+  }
+
+  .account h4 {
+    font-size: 26px;
+  }
+
+  .account p {
+    font-size: 16px;
+  }
+
+  footer {
+    margin-top: 0;
+    padding-block: 4rem;
+  }
+
+  .copy_right span {
+    font-size: 14.2px;
+  }
+
+  .copy_right a {
+    font-size: 14.2px;
+  }
+}
 
 /* Styles for medium mobile devices */
 @media (max-width: 375px) {
-}
+  .contact {
+    gap: 0.4rem;
+  }
 
-/* Styles for small tablets */
-@media (max-width: 600px) {
-}
+  .hero_description h2 {
+    font-size: 32px;
+  }
 
-/* Styles for large tablets */
-@media (max-width: 768px) {
-}
+  .about_podia h2 {
+    font-size: 24px;
+  }
 
-/* Styles for small laptops */
-@media (max-width: 1024px) {
-}
+  .card p {
+    font-size: 14px;
+  }
 
-/* Styles for large laptops and desktops */
-@media (max-width: 1440px) {
-}
+  .products h2 {
+    font-size: 24px;
+  }
 
-/* Styles for extra-large desktops */
-@media (min-width: 1440px) {
+  .text_sell h2 {
+    font-size: 20px;
+  }
+
+  .text_sell p {
+    font-size: 16px;
+  }
+
+  .account h4 {
+    font-size: 24px;
+  }
 }
