@@ -1067,7 +1067,7 @@ footer a:hover {
 }
 
 /* Styles for medium mobile devices */
-@media (max-width: 375px) {
+@media (max-width:375px) {
   .contact {
     gap: 0.4rem;
   }
@@ -1079,7 +1079,6 @@ footer a:hover {
   .about_podia h2 {
     font-size: 24px;
   }
-
   .card p {
     font-size: 14px;
   }
